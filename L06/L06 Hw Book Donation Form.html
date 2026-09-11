@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Book Donation Form</title>
+  </head>
+  <body>
+
+    <h1>📚 Book Donation Form</h1>
+    <p>Fill in the form below to donate your books to our library!</p>
+    <hr>
+
+    <form>
+
+      <fieldset>
+        <legend>Donor Details</legend>
+
+        <label>Donor Name</label><br>
+        <input type="text" id="donor-name" placeholder="Enter your full name"><br><br>
+
+        <label>Donor ID / Phone</label><br>
+        <input type="password" id="donor-id" placeholder="Your contact/ID number"><br><br>
+
+        <label>Donation Date</label><br>
+        <input type="date" id="donation-date"><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Book Information</legend>
+
+        <label>Select Book Category</label><br>
+        <select id="category">
+          <option value="">-- Select a category --</option>
+          <option value="fiction">Fiction / Novels</option>
+          <option value="science">Science & Tech</option>
+          <option value="history">History & Biography</option>
+          <option value="children">Children's Books</option>
+        </select><br><br>
+
+        <label>Condition of Books</label><br>
+        <input type="radio" name="condition" value="new"> Like New<br>
+        <input type="radio" name="condition" value="good"> Gently Used<br>
+        <input type="radio" name="condition" value="fair"> Well Read<br><br>
+
+        <label>Book Titles / List</label><br>
+        <textarea id="book-list" rows="3" cols="35" placeholder="e.g. Harry Potter, Math Textbook Vol 1"></textarea><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Drop-off Days</legend>
+
+        <input type="checkbox" value="mon"> Monday<br>
+        <input type="checkbox" value="wed"> Wednesday<br>
+        <input type="checkbox" value="fri"> Friday<br>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Donate Books">
+
+    </form>
+
+  </body>
+</html>
